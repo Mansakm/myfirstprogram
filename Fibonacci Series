@@ -1,0 +1,16 @@
+class Main {
+  public static void main(String[] args) {
+
+    int n = 10, firstNo = 0, secondNo = 1;
+    System.out.println("Fibonacci Series till " + n + " Nos:");
+
+    for (int i = 1; i <= n; ++i) {
+      System.out.print(firstNo + ", ");
+
+      // compute the next term
+      int nextNo = firstNo + secondNo;
+      firstNo = secondNo;
+      secondNo = nextNo;
+    }
+  }
+}
